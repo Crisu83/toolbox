@@ -1,0 +1,65 @@
+@import "bootstrap.less";
+
+body {
+  background: @grayDarker;
+  color: @white;
+  font-family: 'Open Sans', sans-serif !important;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#container {
+  left: 50%;
+  margin: -280px 0 0 -160px;
+  position: fixed;
+  top: 50%;
+  width: 320px;
+}
+
+#calculator {
+  .display {
+    background-color: @white;
+    border: 1px solid @grayLight;
+    color: @gray;
+    cursor: default;
+    font-size: 48px;
+    line-height: 60px;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 20px 18px;
+    text-align: right;
+  }
+
+  .pad {
+    margin-top: -5px;
+
+    .row-fluid {
+      margin-top: 5px;
+    }
+  }
+
+  .btn {
+    .border-radius(0);
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.key-display {
+  .border-radius(6px);
+  background-color: @black;
+  color: @white;
+  font-size: 80px;
+  height: 60px;
+  line-height: 60px;
+  min-width: 60px;
+  padding: 20px;
+  position: fixed;
+  right: 50px;
+  text-align: center;
+  top: 50px;
+}
